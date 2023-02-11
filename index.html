@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<title>E-Shop</title>
+
+<body>
+
+    <nav>
+        <!-- banner section  -->
+        <div class=" banner-top bg-[#2b2a29] mx-28 realtive ">
+            <ul class=" flex items-center justify-center h-14 text-white ">
+                <li class=" p-3 text-lg hover:text-orange-700 hover:scale-110 "><a href="">Best Seller</a></li>
+                <li class=" p-3 text-lg hover:text-orange-700 hover:scale-110"><a href="">Laptops</a></li>
+                <li class="p-3 text-lg hover:text-orange-700 hover:scale-110"><a href="">New Releases</a></li>
+                <li class="p-3 text-lg hover:text-orange-700 hover:scale-110"><a href="">Today's Deals</a></li>
+                <li class="p-3 text-lg hover:text-orange-700 hover:scale-110 "><a href="">Customer Service</a></li>
+            </ul>
+        </div>
+
+        <!-- Brand logo/name -->
+        <div class="flex  justify-center pt-4 text-5xl font-extrabold">
+            <h2 class="">E-<span class="text-orange-600 ">SHOP</span></h2>
+        </div>
+        <!-- search-items  -->
+
+        <div class="flex justify-start p-5 ">
+            <div class="dropdown-menu ml-20 ">
+                <button id=" menu-btn" class="text-lg font-semibold bg-black text-white w-[125px] rounded ">All
+                    Category</button>
+                <div id="dropdown" class="hidden">
+                    <a href="#">Laptops</a>
+                    <a href="#">Pc Parts</a>
+                    <a href="#">Mobiles</a>
+                    <a href="#">Accessories</a>
+                </div>
+
+            </div>
+
+            <div class="search-bar flex items-center ml-16">
+                <input type="text" value="Type to Search" class="outline-none w-[650px] h-8 rounded-md p-4 bg-gray-400 "
+                    placeholder="Type to Search">
+                <button class="bg-orange-600 w-10 h-8 rounded-md ml-5 cursor-pointer"><i
+                        class="fa fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="details mx-auto">
+                <button><i class="px-3 fa fa-user"></i><label>User</label></button>
+                <button><i class="px-3 fa fa-cart-shopping"></i>Cart</button>
+                <button><i class="px-3 fa fa-heart"></i>liked</button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- slider section -->
+    <div class="container  w-auto h-96 mx-auto">
+        <img src="./images/" alt="" srcset="" id="slider">
+
+        <button class="left" onclick="previous()"><i class="fa fa-chevron-left"></i></button>
+        <button class="right" onclick="next()"><i class="fa fa-chevron-right"></i></button>
+
+    </div>
+
+    <!-- Featured Product -->
+    <div class="mx-auto">
+        <h1 class="text-3xl text-center py-5 font-serif font-semibold mb-5 underline">FEATURED PRODUTCS</h1>
+
+    </div>
+
+    <div class=" grid lg:grid-cols-4 md:grid-cols-2 gap-5 px-20  mx-10 rounded-lg">
+        <!--prodcuts container -->
+
+        <div class="text-center shadow-lg rounded-md bg-white my-4">
+            <div class="overflow-hidden">
+                <img src="./images/asus-rog-strix-scar-15-2021-gaming-laptop-price-nepal.jpg" alt=""
+                    class=" hover:scale-125 overflow-hidden duration-1000">
+            </div>
+            <h3 class="py-2 text-xl ">Asus-rog-strix-scar-15-2021</h3>
+            <p class="font-extrabold">NPR 2,3000</p>
+            <button
+                class="hover:bg-red-700 text-white bg-black py-3 rounded-md w-24 mb-2 hover:scale-105 duration-2000">BUY
+                NOW</button>
+        </div>
+
+        <div class="text-center shadow-lg rounded-md  bg-white my-4">
+            <div class="overflow-hidden">
+                <img src="./images/bfacb497ab25e82dcece01b88f7f408a.jpg" alt=""
+                    class=" hover:scale-125 overflow-hidden duration-1000">
+            </div>
+            <h3 class="py-2 text-xl ">HP Yoga Book</h3>
+            <p class="font-extrabold">Rs1,13000</p>
+            <button
+                class="hover:bg-red-700 text-white bg-black py-3 rounded-md w-24 mb-2 hover:scale-105 duration-2000">BUY
+                NOW
+            </button>
+        </div>
+
+
+        <div class="text-center shadow-lg rounded-md  bg-white my-4">
+            <div class="overflow-hidden">
+                <img src="./images/l31_1_.jpg" alt="" class=" hover:scale-125 overflow-hidden duration-1000">
+            </div>
+            <h3 class="py-2 text-xl ">Lenovo Ideapad i3</h3>
+            <p class="font-extrabold">Price</p>
+            <button
+                class="hover:bg-red-700 text-white bg-black py-3 rounded-md w-24 mb-2 hover:scale-105 duration-2000">BUY
+                NOW
+            </button>
+        </div>
+
+
+        <div class="text-center shadow-lg rounded-md  bg-white my-4 ">
+            <div class="overflow-hidden">
+                <img src="./images/macbook-air-space-gray-select-201810_1_1.jpeg" alt=""
+                    class=" hover:scale-125 overflow-hidden duration-1000">
+            </div>
+            <h3 class="py-2 text-xl ">macbook-air</h3>
+            <p class="font-extrabold">Price</p>
+            <button
+                class="hover:bg-red-700 text-white bg-black py-3 rounded-md w-20 mb-2 hover:scale-105 duration-2000">BUY
+                NOW
+            </button>
+        </div>
+    </div>
+
+
+
+    <!-- pre-order ads -->
+
+    <div class="mt-8">
+        <a href="#"> <img src="./images/pre-order-banner-final.jpg" alt=""> </a>
+    </div>
+
+
+
+
+    <!-- Trending Items -->
+
+    <div class="mx-auto">
+        <h1 class="text-3xl text-center py-6 font-serif font-semibold underline mb-5">Trending Items</h1>
+    </div>
+
+    <div class=" grid lg:grid-cols-5 md:grid-cols-2 gap-5 px-20 bg-slate-400  mx-8 rounded-lg">
+        <!--prodcuts container -->
+
+        <div class="text-center shadow-lg rounded-md bg-white my-4">
+            <div class="overflow-hidden">
+                <img src="./images/trending/acer-nitro-5_an515-55_rgb-kb_modelpreview_7.png" alt=""
+                    class=" hover:scale-125 overflow-hidden duration-1000">
+            </div>
+            <h3 class="py-2 text-xl ">Products brand</h3>
+            <p class="font-extrabold">Price</p>
+            <button
+                class="hover:bg-red-700 text-white bg-black py-3 rounded-md w-24 mb-2 hover:scale-105 duration-2000">BUY
+                NOW</button>
+        </div>
+
+        <div class="text-center shadow-lg rounded-md  bg-white my-4">
+            <div class="overflow-hidden">
+                <img src="./images/trending/hp_omen_16_2022_gaming_laptop_price_nepal.jpg" alt=""
+                    class=" hover:scale-125 overflow-hidden duration-1000">
+            </div>
+            <h3 class="py-2 text-xl ">Products brand</h3>
+            <p class="font-extrabold">Price</p>
+            <button
+                class="hover:bg-red-700 text-white bg-black py-3 rounded-md w-24 mb-2 hover:scale-105 duration-2000">BUY
+                NOW
+            </button>
+        </div>
+
+
+        <div class="text-center shadow-lg rounded-md  bg-white my-4">
+            <div class="overflow-hidden">
+                <img src="./images/trending/logitech-g413-mechanical-gaming-keyboard-price-nepal_11zon.jpg" alt=""
+                    class=" hover:scale-125 overflow-hidden duration-1000">
+            </div>
+            <h3 class="py-2 text-xl ">Products brand</h3>
+            <p class="font-extrabold">Price</p>
+            <button
+                class="hover:bg-red-700 text-white bg-black py-3 rounded-md w-24 mb-2 hover:scale-105 duration-2000">BUY
+                NOW
+            </button>
+        </div>
+
+
+        <div class="text-center shadow-lg rounded-md  bg-white my-4">
+            <div class="overflow-hidden">
+                <img src="./images/trending/logitech-k380-wireless-keyboard-price-nepal_11zon_1_.jpg" alt=""
+                    class=" hover:scale-125 overflow-hidden duration-1000">
+            </div>
+            <h3 class="py-2 text-xl ">Products brand</h3>
+            <p class="font-extrabold">Price</p>
+            <button
+                class="hover:bg-red-700 text-white bg-black py-3 rounded-md w-24 mb-2 hover:scale-105 duration-2000">BUY
+                NOW
+            </button>
+        </div>
+
+        <div class="text-center shadow-lg rounded-md  bg-white my-4">
+            <div class="overflow-hidden">
+                <img src="./images/trending/ugreen-9-in-1-usb-type-c-hub-price-nepal-2_11zon.jpg" alt=""
+                    class=" hover:scale-125 overflow-hidden duration-1000">
+            </div>
+            <h3 class="py-2 text-xl ">Products brand</h3>
+            <p class="font-extrabold">Price</p>
+            <button
+                class="hover:bg-red-700 text-white bg-black py-3 rounded-md w-24 mb-2 hover:scale-105 duration-2000">BUY
+                NOW
+            </button>
+        </div>
+
+    </div>
+
+    <!-- brand names -->
+
+    <div class="bg-slate-300 m-10 rounded-md w-auto">
+        <p class="ml-4 p-2 text-xl font-bold">Brands</p>
+        <div class="flex items-center ">
+            <a href=""> <img src="./images/brand-logo/acer_1.png" alt="" class="hover:scale-110 duration-100"></a>
+            <a href=""> <img src="./images/brand-logo/asus_1.png" alt="" class="hover:scale-110 duration-100"></a>
+            <a href=""> <img src="./images/brand-logo/hp_1_1.png" alt="" class="hover:scale-110 duration-100"></a>
+            <a href=""> <img src="./images/brand-logo/lenovo_2_1.png" alt="" class="hover:scale-110 duration-100"></a>
+            <a href=""> <img src="./images/brand-logo/microsoft-color-logo.png" alt=""
+                    class="hover:scale-110 duration-100"></a>
+            <a href=""> <img src="./images/brand-logo/razer_1.png" alt="" class="hover:scale-150 duration-100"></a>
+
+        </div>
+    </div>
+
+    <!--  footer-->
+    <div class=" ">
+        <div>
+            <p class="text-center pt-10 font-semibold">Trade Alert-Delivering the latest product trends and industry
+                news straight to
+                your inbox.</p>
+        </div>
+
+        <div class="text-center pb-5">
+            <input type="text" class="w-1/3 p-2 my-5 rounded " name="email" id="email"
+                placeholder="Your email address"><button class="bg-red-500 w-36 h-10 rounded  ">SUBSCRIBE</button>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div class=" flex justify-around mr-16 py-16">
+        <hr>
+        <div>
+            <h4 class="text-xl mb-5 font-semibold">ABOUT E-SHOP</h4>
+            <p> About E-SHOP</p>
+            <p> Terms & conditions</p>
+            <p> Warranty</p>
+            <p> Privacy Policy</p>
+            <p> Blog</p>
+        </div>
+
+        <div>
+            <h4 class="text-xl mb-5 font-semibold ">CUSTOMER SERVICE</h4>
+            <p> Shipping & Return Policy</p>
+            <p> MY Account</p>
+            <p> Contact Us</p>
+        </div>
+
+        <div>
+            <h4 class="text-xl mb-5 font-semibold">SUPPORT</h4>
+            <p> <i class="fa fa-envelope"></i>Email@Email.com</p>
+            <p> <i class="fa fa-square-phone"></i>Phone: 01-4200000</p>
+            <p> <i class="fa fa-location-dot"></i>Addres: Suryabinayak, Bhaktapur</p>
+        </div>
+
+    </div>
+    <!-- copyright -->
+
+    <div class="bg-black text-white text-center">
+        <p class="opacity-50 py-4 ">E-SHOPO Computer World Pvt. Ltd. © 2022. All Rights Reserved.</p>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
